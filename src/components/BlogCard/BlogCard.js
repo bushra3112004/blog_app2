@@ -8,7 +8,7 @@ function BlogCard({ id, title, content, picture }) {
             <p className="blog-content">{content.substring(0, 70)}....</p>
             
             <div className="city-img">
-                <img src={picture} alt="city" />
+                <img src={picture} alt="city"  className="picture"/>
             </div>
 
 

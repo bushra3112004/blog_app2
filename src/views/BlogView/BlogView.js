@@ -5,16 +5,16 @@ import blogs from "../../data";
 function BlogView() {
     const { id } = useParams();
     const selectedBlog = blogs.find((blogObject) => blogObject.id === id);
-    if (selectedBlog) {
+    if (!selectedBlog) {
         return <div>Blog not found</div>;
     }
     return (
         <div>
-            <h1>{selectedBlog.title}</h1>
+            <h1 className="title">{selectedBlog.title}</h1>
             <p>
-                <img src={selectedBlog.city.picture} alt="Blog-City" />
+                <img src={selectedBlog.picture} alt="Blog-City" className="pic" />
             </p>
-            <div>{selectedBlog.content}</div>
+            <div className="data">{selectedBlog.content}</div>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import "./Home.css"
 import blogs from "../../data"
-import BlogCard from "../../component/BlogCard/BlogCard"
+import BlogCard from "../../components/BlogCard/BlogCard"
 
 function Home() {
     return (
@@ -12,9 +12,7 @@ function Home() {
                             id,
                             title,
                             content,
-                            famous,
-                            cultural_events,
-                            city
+                            picture
                         } = blogObject
 
                         return (
@@ -22,9 +20,7 @@ function Home() {
                                 id={id}
                                 title={title}
                                 content={content}
-                                famous={famous}
-                                cultural_events={cultural_events}
-                                city={city.picture}
+                                picture={picture}
                             />)
                     })
                 }

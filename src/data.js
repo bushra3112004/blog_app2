@@ -41,7 +41,7 @@ const blogs = [
     {
         id: "introduction-bluetooth-006",
         title: "Bluetooth",
-        content: "",
+        content: "Bluetooth technology is primarily used to wirelessly connect peripherals to mobile phones, desktops, and laptops. Some of the most common Bluetooth accessories include mice, keyboards, speakers, and headphones. Many gaming controllers use Bluetooth technology for wireless connectivity as well.",
         picture: bluetooth
     }
 
