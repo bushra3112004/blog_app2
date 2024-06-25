@@ -9,7 +9,7 @@ function Home() {
                 {
                     blogs.map((blogObject, i) => {
                         const {
-
+                            id,
                             title,
                             content,
                             famous,
@@ -19,7 +19,7 @@ function Home() {
 
                         return (
                             <BlogCard
-                                key={i}
+                                id={id}
                                 title={title}
                                 content={content}
                                 famous={famous}
